@@ -1,0 +1,10 @@
+Codeフォルダの構成
+1_list_to_rawCSV
+→Sparkyで帰属した結果はlistファイルとして出力されるので、Assignment, w1(15N),w2(1H), Data Heightの四つのパラメータを出力し、CSVファイルに変換する
+2_rawCSV_to_modifiedCSV
+→1.の過程でrawCSVとして保存したものが存在するが、欠損値（?-?）が存在している。それらをクリアーにして、修正する
+3_Cal_ChemicalShift_Dif
+→2.の過程で生成されたmodifiedCSVがあるので、二つの修正されたCSVファイルから・化学シフト差・強度比を求める
+4_BarGraph
+4_LineGraph
+→3.でえられたCaliculation.CSVから棒グラフ（BarGraph）か折れ線グラフ（LineGraph）を生成する
